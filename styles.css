@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #bdc3c7,  #2c3e50);
+    padding: 10px;
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 40px 30px 70px;
+    margin: 100px auto 20px;
+    border-radius: 20px;
+    box-shadow:  0 3px 10px rgb(0 0 0 / 0.2);
+}
+.to-do-app h1{
+    color: #2c3e50;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.to-do-app img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 20px;
+    gap: 10px
+}
+
+.input-field #input{
+    flex: 1;
+    padding: 16px 50px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #eceff1;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    box-shadow:  0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.input-field #submit{
+    padding: 16px 30px;
+    background-color: #FF5945;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow:  0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+ul li{
+    list-style: none;
+    padding: 20px 8px 15px 50px ;
+    user-select:  none;
+    font-size: 18px;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 15px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    color: #6a6868;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+
+
+
+ul li span{
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    color: #555;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #edeef0;
+}
+
+
+footer{
+    text-align: center;
+}
